@@ -1,4 +1,4 @@
-STT,Province,number,area,quota
+id,Province,number,area,quota
 1,Hà Nội,1,"các quận: Ba Đình, Hoàn Kiếm và Tây Hồ",3
 2,Hà Nội,2,các quận: Đống Đa và Hai Bà Trưng,3
 3,Hà Nội,3,"các quận: Hà Đông, Thanh Xuân và Cầu Giấy",3
