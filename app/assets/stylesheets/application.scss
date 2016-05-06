@@ -18,17 +18,15 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-#banner {
+.banner {
   background-image: image-url('tranh_co_dong.jpg');
   width: 100%;
   height: 150px;
   margin-bottom: 1em;
 }
 
-.table {
-  th {
-    text-transform: capitalize;
-  }
+.table th {
+  text-transform: capitalize;
 }
 
 .pagination {
@@ -47,4 +45,19 @@
   .form-group {
     padding-right: 1em;
   }
+}
+
+footer {
+  background-color: #2a2730;
+  color: #99979c;
+  text-align: center;
+  padding: 3em 0;
+}
+
+footer a {
+  color: white;
+}
+
+.header {
+  margin: 1em 0;
 }

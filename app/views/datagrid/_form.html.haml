@@ -1,5 +1,6 @@
-= link_to t('form.toggle'), '#filterForm', data: { toggle: 'collapse' }, class: 'btn btn-primary btn-block'
-#filterForm.collapse
+= link_to t('form.toggle'), '#search', data: { toggle: 'collapse' }, class: 'btn btn-primary btn-block'
+
+#search.collapse
   .well
     - options[:html][:class] = "form-inline"
     = bootstrap_form_for grid, options do |f|
