@@ -44,6 +44,10 @@ group :development, :test do
   gem 'spring'
 end
 
-gem 'datagrid'
+gem 'bootstrap-sass'
+gem 'bootstrap_form', github: 'bootstrap-ruby/rails-bootstrap-forms'
+gem 'haml-rails'
 
+gem 'datagrid'
 gem 'kaminari'
+gem 'bootstrap-kaminari-views'

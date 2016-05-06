@@ -1,0 +1,11 @@
+= link_to t('form.toggle'), '#filterForm', data: { toggle: 'collapse' }, class: 'btn btn-primary btn-block'
+#filterForm.collapse
+  .well
+    - options[:html][:class] = "form-inline"
+    = bootstrap_form_for grid, options do |f|
+      - grid.filters.each do |filter|
+        = f.datagrid_filter filter, partials: options[:partials], label: filter.header
+
+      = f.submit t("form.search"), class: "btn btn-primary"
+      - empty_parameter = Rails.version >= "4.1.0" && Rails.version <= '4.1.2' ? nil : {}
+      = link_to t('form.reset'), url_for(grid.to_param => empty_parameter), class: "btn btn-default"

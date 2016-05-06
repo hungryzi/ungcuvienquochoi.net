@@ -1,0 +1,65 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+vi:
+  site:
+    title: "Ứng cử viên ĐBQH 2016"
+  table:
+    province: "tỉnh thành"
+    electorate: "đVBC"
+    name: "họ tên"
+    extra: "thông tin trên mạng"
+  activerecord:
+    models:
+      candidate:
+        one: 'ứng cử viên'
+        other: 'ứng cử viên'
+  form:
+    province: "tỉnh thành"
+    electorate: "đơn vị bầu cử"
+    name: "họ tên"
+    search: "tìm kiếm"
+    reset: reset
+    toggle: 'tìm kiếm theo tỉnh thành, đơn vị bầu cử hay họ tên'
+  views:
+    candidates:
+      extra:
+        google_search: "tìm kiếm với Google"
+        facebook_profile: "Facebook"
+        wiki_profile: "Wiki"
+        dbqh_profile: "Trang ĐBQH"
+        website: "Trang cá nhân"
+  #Kaminari
+    pagination:
+      first: "&laquo; Đầu"
+      last: "Cuối &raquo;"
+      previous: "&lsaquo; Trước"
+      next: "Sau &rsaquo;"
+      truncate: "&hellip;"
+  helpers:
+    page_entries_info:
+      one_page:
+        display_entries:
+          zero: "Không tìm thấy %{entry_name} nào"
+          one: "Hiển thị <b>1</b> %{entry_name}"
+          other: "Hiển thị <b>tất cả %{count}</b> %{entry_name}"
+      more_pages:
+        display_entries: "Hiển thị %{entry_name} <b>%{first}&nbsp;-&nbsp;%{last}</b> trong tổng số <b>%{total}</b>."

@@ -1,0 +1,11 @@
+.container-fluid
+  .row
+    .col-md-12
+      = datagrid_form_for @grid, method: :get, url: candidates_path
+
+    = render 'pagination', rows: @grid.assets
+
+    .col-md-12
+      = datagrid_table @grid
+
+    = render 'pagination', rows: @grid.assets
