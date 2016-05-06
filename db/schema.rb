@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160506083107) do
+ActiveRecord::Schema.define(version: 20160506184216) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,6 +35,11 @@ ActiveRecord::Schema.define(version: 20160506083107) do
     t.string  "parliment_memberships"
     t.string  "hdnd_memberships"
     t.string  "slug"
+    t.text    "facebook_profile_link"
+    t.text    "wiki_profile_link"
+    t.text    "dbqh_profile_link"
+    t.text    "website"
+    t.text    "others"
   end
 
   create_table "electorates", force: :cascade do |t|

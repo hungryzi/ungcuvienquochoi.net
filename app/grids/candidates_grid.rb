@@ -18,15 +18,15 @@ class CandidatesGrid
     self.where("candidates.name ~* ?", value)
   end
 
+  column(:id, header: I18n.t('table.id'))
   column(:province, header: I18n.t('table.province')) do |model|
     model.province.name
   end
   column(:electorate, header: I18n.t('table.electorate')) do |model|
     model.electorate.number
   end
-  column(:name, header: I18n.t('table.name'))
-  column(:extra, header: I18n.t('table.extra'), html: true) do |model|
-    render(partial: 'extra', locals: { candidate: model })
+  column(:name, header: I18n.t('table.name'), html: true, order: :name) do |model|
+    render(partial: 'name', locals: { candidate: model })
   end
 
   private

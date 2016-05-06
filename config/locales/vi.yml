@@ -25,11 +25,15 @@ vi:
     copyright_html: 'Xây dựng bởi <a href="https://twitter.com/hungryzi">@hungryzi</a>, 5/2016.'
     info_html: 'Nếu bạn muốn bổ sung thông tin về ứng cử viên, xin điền vào form này: <a target="_blank" href="http://goo.gl/forms/isoG6aBhSc">http://goo.gl/forms/isoG6aBhSc</a>. Mọi thông tin góp ý xin gửi về <a href="mailto:ungcuvienquochoi@gmail.com">ungcuvienquochoi@gmail.com</a>.'
     contact_html: 'Mọi thông tin góp ý xin gửi về <a href="mailto:ungcuvienquochoi@gmail.com">ungcuvienquochoi@gmail.com</a>.'
+  date:
+    formats:
+      default: '%d/%m/%y'
   table:
     province: "tỉnh thành"
     electorate: "đVBC"
     name: "họ tên"
     extra: "thông tin trên mạng"
+    id: '#'
   activerecord:
     models:
       candidate:
@@ -46,14 +50,15 @@ vi:
     table:
       no_columns: 'không có thông tin nào'
     no_results: 'không tìm thấy ứng cử viên nào'
+  candidates:
+    links:
+      missing: 'chưa có thông tin'
+      google: 'google tên'
+      dbqh_profile: "Trang ĐBQH"
+      website: "Trang cá nhân"
+    name:
+      more_details: 'xem thêm'
   views:
-    candidates:
-      extra:
-        google_search: "tìm kiếm với Google"
-        facebook_profile: "Facebook"
-        wiki_profile: "Wiki"
-        dbqh_profile: "Trang ĐBQH"
-        website: "Trang cá nhân"
   #Kaminari
     pagination:
       first: "&laquo; Đầu"

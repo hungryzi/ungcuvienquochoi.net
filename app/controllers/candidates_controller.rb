@@ -6,5 +6,8 @@ class CandidatesController < ApplicationController
     end
   end
 
+  def show
+    @candidate = Candidate.friendly.find(params[:id])
+  end
 end
 

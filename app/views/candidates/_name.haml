@@ -1,0 +1,8 @@
+= link_to candidate_path(candidate) do
+  = candidate.name
+  (#{t('.more_details')})
+
+%ul.list-inline
+  %li= google_search_link(candidate.name)
+  %li= facebook_profile_link(candidate)
+  %li= website_link(candidate)
