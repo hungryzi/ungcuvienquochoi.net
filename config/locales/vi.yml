@@ -39,6 +39,10 @@ vi:
     search: "tìm kiếm"
     reset: reset
     toggle: 'tìm kiếm theo tỉnh thành, đơn vị bầu cử hay họ tên'
+  datagrid:
+    table:
+      no_columns: 'không có thông tin nào'
+    no_results: 'không tìm thấy ứng cử viên nào'
   views:
     candidates:
       extra:

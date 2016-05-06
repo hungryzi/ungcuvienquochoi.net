@@ -9,6 +9,6 @@
           = datagrid_rows(grid, assets, options)
         - else
           %tr
-            %td.noresults{:colspan => "100%"}= I18n.t('datagrid.no_results').html_safe
+            %td.noresults{:colspan => "100%"}= t('datagrid.no_results').html_safe
 - else
-  = I18n.t("datagrid.table.no_columns").html_safe
+  = t("datagrid.table.no_columns").html_safe
