@@ -39,7 +39,7 @@ class CandidatesGrid
     if province_id.present?
       Electorate.where(province_id: province_id).map {|p| [p.number, p.id] }
     else
-      []
+      Electorate.all.pluck(:number).uniq
     end
   end
 end
