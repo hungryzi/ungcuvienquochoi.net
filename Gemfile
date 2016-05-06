@@ -50,6 +50,9 @@ gem 'datagrid'
 gem 'kaminari'
 gem 'bootstrap-kaminari-views'
 
+gem 'friendly_id'
+gem 'babosa'
+
 gem 'newrelic_rpm'
 
 group :production do
