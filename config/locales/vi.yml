@@ -23,7 +23,7 @@ vi:
   site:
     title: "Ứng cử viên ĐBQH 2016"
     copyright_html: 'Xây dựng bởi <a href="https://twitter.com/hungryzi">@hungryzi</a>, 5/2016.'
-    info_html: 'Nếu bạn muốn bổ sung thông tin về ứng cử viên, xin điền vào form này: . Mọi thông tin góp ý xin gửi về <a href="mailto:ungcuvienquochoi@gmail.com">ungcuvienquochoi@gmail.com</a>.'
+    info_html: 'Nếu bạn muốn bổ sung thông tin về ứng cử viên, xin điền vào form này: <a target="_blank" href="http://goo.gl/forms/isoG6aBhSc">http://goo.gl/forms/isoG6aBhSc</a>. Mọi thông tin góp ý xin gửi về <a href="mailto:ungcuvienquochoi@gmail.com">ungcuvienquochoi@gmail.com</a>.'
     contact_html: 'Mọi thông tin góp ý xin gửi về <a href="mailto:ungcuvienquochoi@gmail.com">ungcuvienquochoi@gmail.com</a>.'
   table:
     province: "tỉnh thành"
