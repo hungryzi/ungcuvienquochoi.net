@@ -81,5 +81,3 @@ test:
 production:
   <<: *default
   database: vn_candidates_2016_production
-  username: vn_candidates_2016
-  password: <%= ENV['VN_CANDIDATES_2016_DATABASE_PASSWORD'] %>

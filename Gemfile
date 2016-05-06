@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use postgresql as the database for Active Record
@@ -51,3 +49,10 @@ gem 'haml-rails'
 gem 'datagrid'
 gem 'kaminari'
 gem 'bootstrap-kaminari-views'
+
+group :production do
+  gem 'puma'
+  gem 'rails_12factor'
+end
+
+ruby '2.1.2'
