@@ -31,7 +31,7 @@ namespace :import do
   end
 
   def parse_date(date_string)
-    Date.strptime(date_string, '%d/%m/%y')
+    Date.strptime(date_string, '%d/%m/%Y')
   rescue ArgumentError
     nil
   end
