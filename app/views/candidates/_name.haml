@@ -1,4 +1,4 @@
-= link_to candidate_path(candidate) do
+= link_to candidate_path(candidate), data: { target: '#candidateModal', toggle: 'modal' } do
   = candidate.name
   (#{t('.more_details')})
 

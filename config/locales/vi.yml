@@ -27,7 +27,7 @@ vi:
     contact_html: 'Mọi thông tin góp ý xin gửi về <a href="mailto:ungcuvienquochoi@gmail.com">ungcuvienquochoi@gmail.com</a>.'
   date:
     formats:
-      default: '%d/%m/%y'
+      default: '%d/%m/%Y'
   table:
     province: "tỉnh thành"
     electorate: "đVBC"
@@ -58,6 +58,8 @@ vi:
       website: "Trang cá nhân"
     name:
       more_details: 'xem thêm'
+    show:
+      close: 'đóng'
   views:
   #Kaminari
     pagination:

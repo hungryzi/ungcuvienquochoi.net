@@ -1,0 +1,17 @@
+%table.table
+  %tr
+    %td.header= t('table.name')
+    %td= @candidate.name
+  %tr
+    %td.header= t('table.province')
+    %td= @candidate.province.name
+  %tr
+    %td.header= t('table.electorate')
+    %td= @candidate.electorate.number
+  %tr
+    %td.header= t('table.dob')
+    %td= l(@candidate.dob)
+
+- for attribute in @candidate.attributes.keys
+  %p #{attribute.humanize} #{@candidate.attributes[attribute].to_s}
+

@@ -8,6 +8,7 @@ class CandidatesController < ApplicationController
 
   def show
     @candidate = Candidate.friendly.find(params[:id])
+    render layout: !request.xhr?
   end
 end
 

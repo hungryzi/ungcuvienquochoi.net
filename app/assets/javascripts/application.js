@@ -18,4 +18,7 @@
 
 $(function() {
   $('[data-toggle="tooltip"]').tooltip()
+  $('body').on('hidden.bs.modal', '.modal', function (e) {
+    $(this).removeData('bs.modal')
+  })
 })
