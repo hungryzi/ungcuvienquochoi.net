@@ -1,4 +1,6 @@
-= link_to t('form.toggle'), '#search', data: { toggle: 'collapse' }, class: 'btn btn-primary btn-block'
+= link_to '#search', data: { toggle: 'collapse' }, class: 'btn btn-primary btn-block' do
+  = icon('search')
+  = t('form.toggle')
 
 #search.collapse
   .well

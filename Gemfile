@@ -45,6 +45,7 @@ end
 gem 'bootstrap-sass'
 gem 'bootstrap_form', github: 'bootstrap-ruby/rails-bootstrap-forms'
 gem 'haml-rails'
+gem 'font-awesome-sass'
 
 gem 'datagrid'
 gem 'kaminari'

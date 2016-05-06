@@ -69,6 +69,8 @@ GEM
     debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (2.6.0)
+    font-awesome-sass (4.6.2)
+      sass (>= 3.2)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
     globalid (0.3.6)
@@ -195,6 +197,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   datagrid
+  font-awesome-sass
   friendly_id
   haml-rails
   jbuilder (~> 2.0)
