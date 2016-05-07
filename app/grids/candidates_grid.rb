@@ -4,7 +4,7 @@ class CandidatesGrid
   include ApplicationHelper
 
   scope do
-    Candidate.joins(electorate: [:province ])
+    Candidate.joins(electorate: [:province ]).order(:id)
   end
 
   filter(:province_id, :enum, header: I18n.t('form.province'), select: :province_options) do |value|
