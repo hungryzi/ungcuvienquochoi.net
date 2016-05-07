@@ -20,6 +20,23 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+html,
+body{
+  height: 100%
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -124px;
+}
+
+footer,
+.footer-push {
+  height: 124px;
+}
+
 .banner {
   background-image: image-url('tranh_co_dong.jpg');
   width: 100%;

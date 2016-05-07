@@ -19,5 +19,7 @@
 
   %body
     = render 'shared/header'
-    = yield
+    .wrapper
+      = yield
+      .footer-push
     = render 'shared/footer'
