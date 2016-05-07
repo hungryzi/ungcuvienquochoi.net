@@ -51,7 +51,6 @@ vi:
   datagrid:
     table:
       no_columns: 'không có thông tin nào'
-    no_results: 'không tìm thấy ứng cử viên nào'
   candidates:
     links:
       missing: 'chưa có thông tin'
@@ -82,7 +81,7 @@ vi:
     page_entries_info:
       one_page:
         display_entries:
-          zero: "Không tìm thấy %{entry_name} nào"
+          zero: "Không tìm thấy %{entry_name} nào."
           one: "Hiển thị <b>1</b> %{entry_name}"
           other: "Hiển thị <b>tất cả %{count}</b> %{entry_name}"
       more_pages:
