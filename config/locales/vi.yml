@@ -29,11 +29,31 @@ vi:
     formats:
       default: '%d/%m/%Y'
   table:
-    province: "tỉnh thành"
-    electorate: "đVBC"
-    name: "họ tên"
-    extra: "thông tin trên mạng"
     id: '#'
+    province: "Tỉnh thành"
+    electorate: "Đơn vị bầu cử"
+    name: "Họ và tên"
+    dob: "Ngày, tháng, năm sinh"
+    gender: "Giới tính"
+    hometown: "Quê quán"
+    address: "Nơi cư trú"
+    ethnicity: "Dân tộc"
+    religion: "Tôn giáo"
+    general_education: "Giáo dục phổ thông"
+    higher_education: "Chuyên môn, nghiệp vụ"
+    degrees: "Học hàm, học vị"
+    political_studies: "Lý luận chính trị"
+    positions: "Nghề nghiệp, chức vụ"
+    employer: "Nơi công tác"
+    party_member_since: "Ngày vào Đảng"
+    parliment_memberships: "ĐBQH khóa Đại biểu"
+    hdnd_memberships: "HĐND cấp, nhiệm kỳ"
+    facebook_profile_link: "Facebook"
+    wiki_profile_link: "Wikipedia"
+    dbqh_profile_link: "ĐBQH"
+    website: "Trang web cá nhân"
+    others: "Thông tin khác"
+    links: "Thông tin trên mạng"
   activerecord:
     models:
       candidate:
@@ -60,6 +80,9 @@ vi:
       more_details: 'xem thêm'
     show:
       close: 'đóng'
+    details:
+      age: "(%{age} tuổi)"
+      years: "(%{years} năm)"
   views:
   #Kaminari
     pagination:

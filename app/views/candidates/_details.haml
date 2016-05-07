@@ -1,17 +1,78 @@
 %table.table
   %tr
-    %td.header= t('table.name')
-    %td= @candidate.name
+    %th= t('table.province')
+    %td= candidate.province.name
   %tr
-    %td.header= t('table.province')
-    %td= @candidate.province.name
+    %th= t('table.electorate')
+    %td
+      = candidate.electorate.number
+      %br/
+      (#{candidate.electorate.area})
   %tr
-    %td.header= t('table.electorate')
-    %td= @candidate.electorate.number
+    %th= t('table.links')
+    %td
+      %ul.list-unstyled
+        %li= google_search_link(candidate.name)
+        %li
+          = t('table.facebook_profile_link')
+          = facebook_profile_link(candidate)
+        %li
+          = t('table.website_link')
+          = website_link(candidate)
+        %li
+          = t('table.wiki_profile_link')
+          = wiki_profile_link(candidate)
+        %li
+          = t('table.dbqh_profile_link')
+          = dbqh_profile_link(candidate)
   %tr
-    %td.header= t('table.dob')
-    %td= l(@candidate.dob)
-
-- for attribute in @candidate.attributes.keys
-  %p #{attribute.humanize} #{@candidate.attributes[attribute].to_s}
-
+    %th= t('table.dob')
+    %td
+      - if candidate.dob
+        = l(candidate.dob)
+        = t('.age', age: candidate.age)
+  %tr
+    %th= t('table.gender')
+    %td= candidate.gender
+  %tr
+    %th= t('table.hometown')
+    %td= candidate.hometown
+  %tr
+    %th= t('table.address')
+    %td= candidate.address
+  %tr
+    %th= t('table.ethnicity')
+    %td= candidate.ethnicity
+  %tr
+    %th= t('table.religion')
+    %td= candidate.religion
+  %tr
+    %th= t('table.general_education')
+    %td= candidate.general_education
+  %tr
+    %th= t('table.higher_education')
+    %td= candidate.higher_education
+  %tr
+    %th= t('table.degrees')
+    %td= candidate.degrees
+  %tr
+    %th= t('table.political_studies')
+    %td= candidate.political_studies
+  %tr
+    %th= t('table.positions')
+    %td= candidate.positions
+  %tr
+    %th= t('table.employer')
+    %td= candidate.employer
+  %tr
+    %th= t('table.party_member_since')
+    %td
+      - if candidate.party_member_since
+        = l(candidate.party_member_since)
+        = t('.years', years: candidate.party_membership_years)
+  %tr
+    %th= t('table.parliment_memberships')
+    %td= candidate.parliment_memberships
+  %tr
+    %th= t('table.hdnd_memberships')
+    %td= candidate.hdnd_memberships
