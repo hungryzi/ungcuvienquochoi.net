@@ -5,7 +5,7 @@ module ApplicationHelper
       candidate_id: candidate.id,
       url: "http://google.com/search?q=#{name}"
     )
-    link_to I18n.t('candidates.links.google'), url, target: '_blank'
+    link_to I18n.t('candidates.links.google'), url, target: '_blank', rel: 'nofollow'
   end
 
   def facebook_profile_link(candidate)
@@ -47,7 +47,7 @@ module ApplicationHelper
 
   def candidate_link(candidate_id:, url:, icon_name: 'external-link')
     if url.present?
-      link_to intercept_link(candidate_id, url), target: '_blank' do
+      link_to intercept_link(candidate_id, url), target: '_blank', rel: 'nofollow' do
         icon(icon_name)
       end
     else
