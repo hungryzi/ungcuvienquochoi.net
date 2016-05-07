@@ -55,6 +55,8 @@ gem 'friendly_id'
 gem 'babosa'
 
 gem 'newrelic_rpm'
+gem 'rollbar'
+gem 'oj', '~> 2.12.14'
 
 group :production do
   gem 'puma'
