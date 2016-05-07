@@ -12,5 +12,7 @@
   .container-fluid
     .row
       .col-xs-12
-        %h2.page-header= @candidate.name
+        .page-header
+          = link_to t('.back'), :back
+          %h2= @candidate.name
         = render 'details', candidate: @candidate
