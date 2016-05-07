@@ -12,7 +12,9 @@
   .container-fluid
     .row
       .col-xs-12
-        .page-header
-          = link_to t('.back'), :back
+        %div
+          = link_to :back do
+            = icon('chevron-circle-left')
+            = t('.back')
           %h2= @candidate.name
         = render 'details', candidate: @candidate
