@@ -11,7 +11,7 @@ class CandidatesGrid
     self.where("electorates.province_id" => value)
   end
   filter(:electorate_id, :enum, header: I18n.t('form.electorate'), select: :electorate_options) do |value|
-    self.where("candidates.electorate_id" => value)
+    self.where("electorates.number" => value)
   end
   filter(:name, :string, header: I18n.t('form.name')) do |value|
     value = "\\y#{value}\\y".downcase
@@ -37,7 +37,7 @@ class CandidatesGrid
 
   def electorate_options
     if province_id.present?
-      Electorate.where(province_id: province_id).map {|p| [p.number, p.id] }
+      Electorate.where(province_id: province_id).map {|p| [p.number, p.number] }
     else
       Electorate.all.pluck(:number).uniq
     end
