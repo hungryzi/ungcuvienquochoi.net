@@ -14,7 +14,7 @@ Rollbar.configure do |config|
     accessToken: "848b0b3eda4547d9b8556d39d4e44751",
     captureUncaught: true,
     payload: {
-      environment: "production"
+      environment: "#{Rails.env}"
     }
   }
   # By default, Rollbar will try to call the `current_user` controller method
