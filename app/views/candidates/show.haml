@@ -1,9 +1,9 @@
 - if request.xhr?
   .modal-header
     %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
-      %span{"aria-hidden" => "true"} ×
+      %span{"aria-hidden" => "true"}= t('.close')
     %h4.modal-title
-      = link_to @candidate.name, candidate_path(@candidate)
+      = link_to @candidate.name, candidate_path(@candidate), class: 'candidateModal__link'
   .modal-body
     = render 'details', candidate: @candidate
   .modal-footer
