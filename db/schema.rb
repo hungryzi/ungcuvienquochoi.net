@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160507164516) do
+ActiveRecord::Schema.define(version: 20160518174434) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 20160507164516) do
     t.text    "dbqh_profile_link"
     t.text    "website"
     t.text    "others"
+    t.boolean "independent_candidate", default: false
   end
 
   create_table "electorates", force: :cascade do |t|

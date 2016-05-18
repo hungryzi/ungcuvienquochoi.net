@@ -48,6 +48,14 @@ vi:
     search: "tìm kiếm"
     reset: 'hiển thị tất cả'
     toggle: 'tìm kiếm'
+    party_member:
+      label: 'Đảng CSVN'
+      member: 'Đảng viên'
+      non_member: 'Không phải Đảng viên'
+    independent_candidate:
+      label: 'Ứng cử'
+      independent: 'Tự ứng cử'
+      non_independent: 'Được giới thiệu'
   datagrid:
     table:
       no_columns: 'không có thông tin nào'
