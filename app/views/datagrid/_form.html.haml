@@ -3,7 +3,7 @@
   = t('form.toggle')
 
 - searching = params[:candidates_grid].present?
-#search.collapse(class="#{searching ? 'in' : ''}")
+#search.collapse.in
   .well
     - options[:html][:class] = "form-inline"
     = bootstrap_form_for grid, options do |f|
