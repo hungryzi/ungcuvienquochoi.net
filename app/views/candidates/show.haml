@@ -19,5 +19,11 @@
           = link_to :back do
             = icon('chevron-circle-left')
             = t('.back')
-          %h2= @candidate.name
+          %h1= @candidate.name
+          %h3
+            = @candidate.province.name
+            ,
+            = t('.electorate', electorate: @candidate.electorate.number)
+            (#{@candidate.electorate.area})
+
         = render 'details', candidate: @candidate

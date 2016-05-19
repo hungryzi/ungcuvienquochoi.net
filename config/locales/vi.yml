@@ -70,6 +70,7 @@ vi:
     show:
       close: 'đóng'
       back: 'quay lại danh sách'
+      electorate: "đơn vị bầu cử số %{electorate}"
     details:
       age: "(%{age} tuổi)"
       years: "(%{years} năm)"
