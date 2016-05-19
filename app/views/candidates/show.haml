@@ -9,6 +9,9 @@
   .modal-footer
     %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}= t('.close')
 - else
+  - content_for(:meta) do
+    %meta(name="description" content="#{t('site.meta_description')} #{@candidate.name} #{@candidate.province.name}")
+
   .container-fluid
     .row
       .col-xs-12
